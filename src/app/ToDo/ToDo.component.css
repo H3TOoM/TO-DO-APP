@@ -1,0 +1,76 @@
+.to-do-container {
+  background-color: #7f8caa;
+  min-width: 400px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 1px 1px #888888;
+  margin-top: 20px;
+}
+
+.to-do-container h1 {
+  color: #eaefef;
+  letter-spacing: 2px;
+}
+
+.done {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.input-box {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.to-do-container .input-box input {
+  outline: 0;
+  border: 0;
+  width: 60%;
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 25px;
+  background-color: #eaefef;
+  color: #333446;
+}
+
+.to-do-container .input-box i {
+  font-size: 30px;
+  background-color: transparent;
+
+  border-radius: 25px;
+  color: #eaefef;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.to-do-container .input-box button:hover {
+  background-color: #eaefef;
+  color: #333446;
+}
+.no-task{
+  width: 300px;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  list-style: none;
+  width: 70%;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.list li{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  color: #eaefef;
+}
+.list li i{
+  color: #eaefef;
+  cursor: pointer;
+}

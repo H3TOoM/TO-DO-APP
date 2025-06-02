@@ -16,6 +16,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -86,5 +87,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6f1f13e1-a5ee-4230-a9c9-0833b0f0c807"
   }
 }

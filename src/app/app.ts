@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ToDoComponent } from './ToDo/ToDo.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ToDoComponent,CommonModule,FormsModule],
+  standalone: true,
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

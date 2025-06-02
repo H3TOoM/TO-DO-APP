@@ -1,0 +1,21 @@
+<div class="to-do-container">
+  <h1>TO DO LIST <i class="fa-solid fa-list"></i></h1>
+
+  <div class="input-box">
+    <input type="text" [(ngModel)]="taskText" />
+    <i (click)="addTask()" class="fa-solid fa-circle-plus"></i>
+  </div>
+
+  <ng-template #noTasks>
+    <img src="assets/noTask.svg" alt="No Tasks Yet" class="no-task" />
+  </ng-template>
+
+  <ul *ngIf="taskList.length > 0; else noTasks" class="list">
+    <li *ngFor="let task of taskList">
+      <span [class.done]="task.isDone" (click)="toggleDone(task.id)">{{
+        task.title
+      }}</span>
+      <i class="fa-solid fa-trash" (click)="deleteTask(task.id)"></i>
+    </li>
+  </ul>
+</div>
