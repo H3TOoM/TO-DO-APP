@@ -28,7 +28,7 @@ export class ToDoComponent implements OnInit {
   }
 
   addTask() {
-    if (!this.taskText || !this.taskText.trim()) {
+    if (!this.taskText.trim()) {
       Swal.fire({
         title: 'Empty Task!',
         text: 'Please add a task',

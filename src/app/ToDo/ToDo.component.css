@@ -44,8 +44,8 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-.to-do-container .input-box button:hover {
-  background-color: #eaefef;
+.to-do-container .input-box i:hover {
+  /* background-color: #eaefef; */
   color: #333446;
 }
 .no-task{
